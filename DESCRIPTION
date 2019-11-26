@@ -1,0 +1,21 @@
+Package: myrp
+Type: Package
+Title: A Supplementary Package to SAVER
+Version: 0.1.0
+Author: Yiqiu Tang
+Maintainer: Yiqiu Tang <yiqiu.tang@mail.utoronto.ca>
+Description: Carry out cell clustering analysis and pseudotime trajectory
+    analysis to assess the imputation accuracy of SAVER.
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Collate: 'cell_clustering.R' 'data.R' 'normalization.R' 'trajectory_analysis.R'
+RoxygenNote: 6.1.1
+Depends: R (>= 3.0.1)
+biocViews:
+Imports: SAVER, TSCAN, igraph, Rtsne, mclust, scales
+Suggests: 
+    knitr,
+    testthat
+NeedsComplilation: no
+VignetteBuilder: knitr
